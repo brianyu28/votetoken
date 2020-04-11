@@ -21,7 +21,7 @@ def claim(request):
         return render(request, "tokens/index.html", {
             "error": "Token has already been claimed."
         })
-    
+
     token = Token(token=uuid.uuid4().hex)
     token.save()
 
