@@ -1,0 +1,19 @@
+{% extends "tokens/layout.html" %}
+
+{% block body %}
+    <h1>Voting Token</h1>
+
+    Save the below token for voting, you <b>will not be able to view it again after closing this page</b>.
+
+    <hr>
+    
+    <b>Election: </b> {{ token.election.name }}
+    <br/>
+    <b>Token: </b> {{ token.token }}
+
+    <hr>
+
+    <a href="{% url 'index' %}">Generate another token.</a>
+
+    </form>
+{% endblock %}
