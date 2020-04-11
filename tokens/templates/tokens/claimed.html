@@ -6,10 +6,11 @@
     Save the below token for voting, you <b>will not be able to view it again after closing this page</b>.
 
     <hr>
-    
+
     <b>Election: </b> {{ token.election.name }}
     <br/>
-    <b>Token: </b> {{ token.token }}
+    <b>Token: </b>
+    <input autofocus style="width: 500px;" type="text" readonly value="TOKEN-{{ token.token }}">
 
     <hr>
 
